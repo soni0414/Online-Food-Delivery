@@ -1,0 +1,186 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 35px;
+    font-size: 25px;
+}
+
+#logo img{
+    height: 16;
+    margin: 3px 5px;
+}
+
+/* Navigation Bar List Style */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 478px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('./bg.jpeg');
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.84;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Sreif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Sreif', serif;
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services.box{
+    border: 2px darkred brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 33;
+    background-color: grey;
+    margin-bottom: 20px;
+}
+
+#services .box pic1{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services.box{
+    font-family: 'Breefont-fami Sreif', serif;
+}
+#services{}
+#services{}
+
+/* Client Section */
+#Client section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+
+#clients logo2{
+    height: 33px;
+}
+
+/* Utility Class */
+.h-primary{
+    font-family: 'Breefont-fami Sreif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondaryary{
+    font-family: 'Bree Sreif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding-left: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
